@@ -12,7 +12,8 @@ app.set('view engine', 'hbs');
 
 require('./hbs/helpers');
 
-const port = process.env.PORT || 3000;
+//Sirve para saber el puerto por el que vaa estar disponible
+const port = process.env.PORT || 3000; //Si no se sabe el puerto de localhost, especifica el puerto 3000
 
 app.get('/', function(req, res) {
     res.render('home', {
